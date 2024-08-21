@@ -1,0 +1,27 @@
+<app-header></app-header>
+ 
+<form (ngSubmit)="onSubmit()">
+    <h2>Cadastre-se</h2>
+  
+    <div class="form-group">
+      <label for="login">Nome:</label>
+      <input type="text" id="nome" [(ngModel)]="novoRegistro.nome" name="login" placeholder="Nome Completo" required/>
+    </div>
+    <div class="form-group">
+      <label for="login">E-mail:</label>
+      <input type="text" id="login" [(ngModel)]="novoRegistro.login" name="login" placeholder="Digite seu e-mail" required/>
+    </div>
+
+       <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" [(ngModel)]="novoRegistro.password" name="password" placeholder="Digite uma senha de até 6 dígitos numéricos" required/>
+      </div>
+      <div class="form-group">
+        <label for="userType">Tipo:</label>
+        <select class="form-control" id="userType" [(ngModel)]="novoRegistro.role" name="role" required>
+          <option value="" disabled selected>Selecione:</option>
+          <option value="USER">USER</option>
+          </select>
+          </div>
+          <input type="submit" value="{{btnText || 'Enviar'}}"/>
+  </form>

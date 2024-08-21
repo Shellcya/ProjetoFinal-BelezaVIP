@@ -1,0 +1,50 @@
+<app-dashboard></app-dashboard>
+
+<div class="table-container mat-elevation-z8">
+    <h2>Visualize seu agendamento</h2>
+    <input  [(ngModel)]="cpfParaBuscar" placeholder="DIGITE O SEU CPF">
+  <button class="buscar" (click)="buscarPorCpf()">Buscar</button>
+    <table mat-table [dataSource]="dataSource">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>ID</th>
+        <td mat-cell *matCellDef="let item">{{ item.id }}</td>
+      </ng-container>
+      <ng-container matColumnDef="nome">
+        <th mat-header-cell *matHeaderCellDef>NOME</th>
+        <td mat-cell *matCellDef="let item">{{ item.nome }}</td>
+      </ng-container>
+      <ng-container matColumnDef="data">
+        <th mat-header-cell *matHeaderCellDef>DATA</th>
+        <td mat-cell *matCellDef="let item">{{ item.data }}</td>
+      </ng-container>
+      <ng-container matColumnDef="horario">
+        <th mat-header-cell *matHeaderCellDef>HORÁRIO</th>
+        <td mat-cell *matCellDef="let item">{{ item.horario }}</td>
+      </ng-container>
+      <ng-container matColumnDef="cpf">
+        <th mat-header-cell *matHeaderCellDef>CPF </th>
+        <td mat-cell *matCellDef="let item">{{ item.cpf }}</td>
+          </ng-container>     
+       
+          <ng-container matColumnDef="especialidades">
+            <th mat-header-cell *matHeaderCellDef>SERVIÇOS </th>
+            <td mat-cell *matCellDef="let item">{{ item.especialidades }}</td>
+              </ng-container>
+
+      <ng-container matColumnDef="statusAgendamento">
+        <th mat-header-cell *matHeaderCellDef>STATUS</th>
+        <td mat-cell *matCellDef="let item">{{ item.statusAgendamento }}</td>
+      </ng-container>
+      
+      <ng-container matColumnDef="acoes">
+        <th *matHeaderCellDef> </th>
+        <mat-cell *matCellDef="let agendamento">
+          
+        </mat-cell>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <button  class="sair" matTooltip="Voltar para tela inicial" (click)="sair()" value="Sair">
+       Voltar
+    </button>

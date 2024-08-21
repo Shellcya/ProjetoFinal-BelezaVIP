@@ -1,0 +1,39 @@
+<app-header></app-header>
+
+<div class="container">
+
+  <form (ngSubmit)="onLogin()">    
+      <h2>Login</h2>
+        
+           <div class="form-fieldset">
+        <div class="form-group">
+          <label for="login" class="visually-hidden">Login:</label>
+          <input class="form-input" id="login" type="text"  name="login"  [(ngModel)]="loginObj.login"  placeholder="Acesse com seu e-mail" required/>
+        </div>
+
+        <div class="form-group">
+          <label for="password" class="visually-hidden">Senha:</label>
+          <input 
+            class="form-input" 
+            id="password" 
+            type="password" 
+            [(ngModel)]="loginObj.password" 
+            placeholder="Digite sua senha" 
+            name="password" 
+            required
+          />
+        </div>
+
+        <button class="form-submit" type="submit">Entrar</button>
+      </div>
+
+      <div class="form-actions">
+        <button class="form-button forgot-pass" type="button">Não tem cadastro?</button>
+        <button class="form-button sign-up">
+          <a routerLink="/form-registrar">Registre-se aqui</a>
+          <i class="fa fa-user-plus" aria-hidden="true"></i>
+        </button>
+      </div>
+ 
+  </form>
+</div>

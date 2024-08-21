@@ -1,0 +1,5 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap");
+html, body { height: 100%; 
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  background: linear-gradient(135deg, #14051E, #2A0D4C, #6F00FF);}

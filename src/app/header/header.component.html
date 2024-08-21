@@ -1,0 +1,13 @@
+<nav class="menu">
+  <div class="menu-hamburger">
+      <button class="hamburger" (click)="toggleMenu()">&#9776;</button>
+  </div>
+  <ul [class.open]="menuOpen">
+      <li><a routerLink="/home" (click)="closeMenu()" >Início</a></li>
+      <li><a routerLink="/sobre" (click)="closeMenu()">Sobre Nós</a></li>
+      <li><a routerLink="/servicos" (click)="closeMenu()">Nossos Serviços</a></li>
+      <div class="button-container"  (click)="closeMenu()" >
+        <button class= "bt-log"routerLink="/login"> Faça seu login</button>
+        </div>
+  </ul>
+</nav>

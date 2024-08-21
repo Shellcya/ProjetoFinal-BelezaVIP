@@ -1,0 +1,28 @@
+<app-admin-dashboard></app-admin-dashboard>
+
+<div class="atualizacao">
+  <form (ngSubmit)="salvarAtualizacao()">
+<table>
+  <h2>Atualizar Informações do Agendamento</h2>
+  <tbody>
+    <label for="id">ID: </label>
+<input type="text" id="id" [(ngModel)]="id" name="id" required disabled><br>
+
+<label for="userType">Campo de Atualização: </label>
+<select type="text" id="campo" [(ngModel)]="campo" name="campo" required>
+<option value="" disabled selected>Selecione:</option>
+<option value="nome">NOME</option>
+<option value="data">DATA</option>
+<option value="horario">HORÁRIO</option>
+<option value="cpf">CPF </option>
+<option value="especialidades">SERVIÇOS </option>
+<option value="statusAgendamento">STATUS DO AGENDAMENTO</option>
+</select><br>
+<label for="novoValor">Atualizar por: </label>
+<input type="text" id="novoValor" [(ngModel)]="novoValor" name="novoValor"  required><br>
+
+     <button type="submit">Salvar</button>
+  </tbody>
+</table>
+</form>
+</div>

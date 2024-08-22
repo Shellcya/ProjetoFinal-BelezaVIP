@@ -1,27 +1,47 @@
-# ProjetoFinalBelezaVIP
+#Beleza  VIP
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
+O Beleza VIP é uma aplicação web desenvolvida para gerenciar serviços de beleza, como agendamentos de horários e cadastro de clientes. A aplicação facilita a administração de um salão de beleza, permitindo um controle eficiente de clientes, horários e serviços oferecidos.
 
-## Development server
+## Motivação do Projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+A ideia do projeto surgiu da necessidade de otimizar a gestão de serviços em salões de beleza. O gerenciamento manual frequentemente leva a erros, como agendamentos duplicados e a perda de dados dos clientes. O objetivo foi criar uma solução tecnológica que centralize essas operações em uma única plataforma, facilitando a vida tanto dos proprietários de salões quanto dos clientes.
 
-## Code scaffolding
+## Funcionalidades principais
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Registro**: Permite que novos usuários criem suas contas na plataforma.
+- **Login**: Necessário tanto para clientes quanto para administradores. Clientes podem gerenciar seus agendamentos e dados pessoais, enquanto administradores tem acesso a funcionalidades adicionais.
+- **Cadastro**: Usuários podem cadastrar seus dados pessoais.
+- **Agendamento**: Permite que os clientes agendem serviços diretamente na plataforma.
+- **Lista de Cadastros**: Disponível para administradores, permite a visualização de todos os clientes registrados na plataforma.
+- **Lista de Agendamentos**: Disponível para administradores, exibe todos os agendamentos feitos pelos clientes.
+- **Atualização do Status dos Agendamentos**: Administradores podem atualizar o status dos agendamentos.
 
-## Build
+## Tecnologias utilizadas
+- **IDE**: IntelliJ
+- **Linguagem**: Java
+- **Frameworks e Bibliotecas**:
+  - Spring Boot com Maven
+  - JPA + Hibernate
+  - Spring Security
+  - JWT Security
+  - Lombok
+  - Swagger
+  - Tomcat
+- **Banco de Dados**: PostgreSQL
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Front-end
+- **IDE**: Visual Studio Code
+- **Linguagem**: TypeScript
+  - HTML e CSS
+  - Angular Framework
+  - Angular Material
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Agradecimentos
 
-## Running end-to-end tests
+Agradeço pela oportunidade de participar da Academia Java, aos professores Lucas, Érico e Fabrício, e a todos os colegas da turma. Estou muito grata pela oportunidade de desenvolver este projeto.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+##Desenvolvedora:
 
-## Further help
+- Shellcya Habiakel
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

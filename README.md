@@ -41,7 +41,7 @@ A ideia do projeto surgiu da necessidade de otimizar a gestão de serviços em s
 
 Agradeço pela oportunidade de participar da Academia Java, aos professores Lucas, Érico e Fabrício, e a todos os colegas da turma. Estou muito grata pela oportunidade de desenvolver este projeto.
 
-##Desenvolvedora:
+## Desenvolvedora:
 
 - Shellcya Habiakel
 

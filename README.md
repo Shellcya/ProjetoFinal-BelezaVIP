@@ -1,4 +1,4 @@
-#Beleza  VIP
+# Beleza  VIP
 
 O Beleza VIP é uma aplicação web desenvolvida para gerenciar serviços de beleza, como agendamentos de horários e cadastro de clientes. A aplicação facilita a administração de um salão de beleza, permitindo um controle eficiente de clientes, horários e serviços oferecidos.
 

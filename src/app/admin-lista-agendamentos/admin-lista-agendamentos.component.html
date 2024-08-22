@@ -1,0 +1,56 @@
+<app-admin-dashboard></app-admin-dashboard>
+<div class="table-container mat-elevation-z8">
+    <h2>Gerenciamento de Agendamentos</h2>
+       
+    <mat-table mat-table #matTable [dataSource]="dataSource">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>ID</th>
+        <td mat-cell *matCellDef="let item">{{ item.id }}</td>
+      </ng-container>
+      <ng-container matColumnDef="nome">
+        <th mat-header-cell *matHeaderCellDef>NOME</th>
+        <td mat-cell *matCellDef="let item">{{ item.nome }}</td>
+      </ng-container>
+      <ng-container matColumnDef="data">
+        <th mat-header-cell *matHeaderCellDef>DATA</th>
+        <td mat-cell *matCellDef="let item">{{ item.data }}</td>
+      </ng-container>
+      <ng-container matColumnDef="horario">
+        <th mat-header-cell *matHeaderCellDef>HORÁRIO</th>
+        <td mat-cell *matCellDef="let item">{{ item.horario }}</td>
+      </ng-container>
+      <ng-container matColumnDef="cpf">
+        <th mat-header-cell *matHeaderCellDef>CPF </th>
+        <td mat-cell *matCellDef="let item">{{ item.cpf }}</td>
+           </ng-container>        
+           <ng-container matColumnDef="especialidades">
+            <th mat-header-cell *matHeaderCellDef>SERVIÇOS</th>
+            <td mat-cell *matCellDef="let item">{{ item.especialidades }}</td>
+               </ng-container>       
+       
+    
+      <ng-container matColumnDef="statusAgendamento">
+        <th mat-header-cell *matHeaderCellDef>STATUS</th>
+        <td mat-cell *matCellDef="let item">{{ item.statusAgendamento }}</td>
+      </ng-container>   
+         
+
+      <ng-container matColumnDef="acoes">
+        <th *matHeaderCellDef>AÇÕES</th>
+        <mat-cell *matCellDef="let agendamento">
+          <button  class="atualizar "  matTooltip="Atualizar" (click)="atualizarAgendamento(agendamento)" value="Atualizar">
+             Atualizar 
+          </button>
+          <button  class="excluir" matTooltip="Excluir" (click)="deleteAgendamento(agendamento)" value="Excluir">
+           <mat-icon>delete</mat-icon>  
+          </button>
+         
+        </mat-cell>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </mat-table>
+
+    <button class="sair"  matTooltip="Voltar para tela inicial" (click)="sair()" value="Sair">
+     Voltar
+    </button>

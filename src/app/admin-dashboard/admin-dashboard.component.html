@@ -1,0 +1,19 @@
+ 
+<nav class="menu">
+  <div class="menu-hamburger">
+      <button class="hamburger" (click)="toggleMenu()">&#9776;</button>
+  </div>
+  <ul [class.open]="menuOpen">
+     <li><a routerLink="/admin-dashboard" (click)="closeMenu()" >Inicio</a></li>
+    <li><a routerLink="/perfilAdmin/cadastro" (click)="closeMenu()" >Todos os Cadastros</a></li>
+    <li><a routerLink="/admin-lista-agendamentos" (click)="closeMenu()" >Todos Agendamentos</a></li>
+    <li><a routerLink="/cadastro-admin" (click)="closeMenu()" >Novo Cadastro</a></li>
+   <li><a routerLink="/agendar-admin" (click)="closeMenu()" >Novo Agendamento</a></li>
+  
+  <div class="button-container">
+    <button (click)="logout()">Sair</button>
+    </div>
+  </ul> 
+</nav>
+
+ 

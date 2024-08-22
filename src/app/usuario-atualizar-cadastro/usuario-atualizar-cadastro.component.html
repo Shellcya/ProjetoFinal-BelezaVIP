@@ -1,0 +1,33 @@
+<app-dashboard></app-dashboard>
+<div class="atualizacao">
+  <form (ngSubmit)="salvarAtualizacao()">
+<table>
+  <h2>Atualize seu cadastro</h2>
+  <tbody>
+    <label  for="id">ID: </label>
+<input type="text" id="id" [(ngModel)]="id" name="id" required disabled><br>
+
+<label for="userType">Selecione o campo: </label>
+<select type="text" id="campo" [(ngModel)]="campo" name="campo" required >
+<option value="" disabled selected>Selecione:</option>
+<option value="nome">NOME</option>
+<option value="dataNascimento">DATA DE NASCIMENTO</option>
+<option value="cpf">CPF</option>
+<option value="telefone">TELEFONE</option>
+<option value="email">E-MAIL</option>
+<option value="cep">CEP</option>
+<option value="enderecoCompleto">ENDEREÇO</option>
+<option value="complemento">COMPLEMENTO</option>
+<option value="bairro">BAIRRO</option>
+<option value="cidade">CIDADE</option>
+<option value="uf">UF</option> 
+
+</select><br>
+<label for="novoValor">Novo: </label>
+<input type="text" id="novoValor" [(ngModel)]="novoValor" name="novoValor" required><br>
+
+     <button type="submit">Concluir</button>
+  </tbody>
+</table>
+</form>
+</div>

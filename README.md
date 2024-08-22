@@ -17,7 +17,7 @@ A ideia do projeto surgiu da necessidade de otimizar a gestão de serviços em s
 - **Atualização do Status dos Agendamentos**: Administradores podem atualizar o status dos agendamentos.
 
 ## Tecnologias utilizadas
-  **Back-end**
+  ### Back-end
 
 - **IDE**: IntelliJ
 - **Linguagem**: Java
@@ -31,7 +31,7 @@ A ideia do projeto surgiu da necessidade de otimizar a gestão de serviços em s
   - Tomcat
 - **Banco de Dados**: PostgreSQL
 
-   **Front-end**
+  ### Front-end
 
 - **IDE**: Visual Studio Code
 - **Linguagem**: TypeScript
